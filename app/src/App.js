@@ -6,6 +6,10 @@ import { routes } from './routes'
 import logo from './logo.svg';
 import './App.css';
 
+const Error404 = () => (
+  <SemanticHeader>Error 404: Page not found.</SemanticHeader>
+)
+
 class App extends Component {
   render(){
     return (
@@ -15,7 +19,10 @@ class App extends Component {
           <Grid centered columns={2}>
             <Grid.Column>
               <Segment  padded={false}>
-                {routes.map(elem => <Route path={elem.path} component={elem.component}/>)}
+                <Switch>
+                  {routes.map(elem => <Route path={elem.path} component={elem.component}/>)}
+                  <Route component={Error404} />
+                </Switch>
                 <Rail position='right'>
                   <Route path='/' component={Sidebar}/>
                 </Rail>
