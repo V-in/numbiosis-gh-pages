@@ -1,15 +1,20 @@
 import React from 'react'
+import { TabularPage } from '../components'
 
 const routes = [
   {
-    sidebarName: 'Home',
-    path: '/',
-    mainComponent: () => (<span>Home</span>)
-  },
-  {
-    sidebarName: 'Vinicius',
-    path: '/vinicius',
-    mainComponent: () => (<span>{text}</span>)
+    sidebarName: 'Pagina exemplo',
+    path: '/caminho-exemplo',
+    component: () => <TabularPage tabs={[
+      {
+        name: 'Tab1',
+        content: 'Conteudo Tab1'
+      },
+      {
+        name: 'Tab2',
+        content: text
+      }
+    ]}/>
   },
 ]
 
