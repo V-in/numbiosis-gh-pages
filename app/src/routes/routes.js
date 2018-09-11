@@ -1,5 +1,7 @@
 import React from 'react'
+import SecantMethodDescription from '../misc/SecantMethodDescription'
 import { TabularPage } from '../components'
+import { Secant } from '../components'
 
 const routes = [
   {
@@ -13,6 +15,20 @@ const routes = [
       {
         name: 'Tab2',
         content: text
+      }
+    ]}/>
+  },
+  {
+    sidebarName: 'Metodo secante',
+    path: '/secante',
+    component: () => <TabularPage tabs={[
+      {
+        name: 'Descrição',
+        content: <SecantMethodDescription /> 
+      },
+      {
+        name: 'Aplicação',
+        content: <Secant />
       }
     ]}/>
   },

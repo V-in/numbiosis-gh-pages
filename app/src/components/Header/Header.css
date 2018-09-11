@@ -7,6 +7,7 @@
 
 .appHeader {
   background-color: #2A2D33;
+  height: 36px;
   width: 100%;
   box-shadow: 0px 2px 2pt 1pt rgba(0,0,0,0.1) ;
   padding: 3px;
