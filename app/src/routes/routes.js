@@ -1,14 +1,26 @@
 import React from 'react'
-import SecantMethodDescription from '../misc/SecantMethodDescription'
-import { secant } from '../functions'
+//import SecantMethodDescription from '../misc/SecantMethodDescription'
+//import { secant } from '../functions'
 import { TabularPage, GenericMethod } from '../components'
 import { SecantMethod } from '../components'
+import { MullerMethod } from '../components'
+import { RegulaFalsiMethod } from '../components'
 
 const routes = [
   {
-    sidebarName: 'Metodo secante',
+    sidebarName: 'Método da Falsa Posição',
+    path: '/falsa_posicao',
+    component: () => <RegulaFalsiMethod />
+  },
+  {
+    sidebarName: 'Método Secante',
     path: '/secante',
     component: () => <SecantMethod />
+  },
+  {
+    sidebarName: 'Método Muller',
+    path: '/muller',
+    component: () => <MullerMethod />
   },
   {
     sidebarName: 'Example Page',
