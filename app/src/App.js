@@ -20,7 +20,7 @@ class App extends Component {
             <Grid.Column>
               <Segment  padded={false}>
                 <Switch>
-                  {routes.map(elem => <Route path={elem.path} component={elem.component}/>)}
+                  {routes.map((elem, index) => <Route key={index} path={elem.path} component={elem.component}/>)}
                   <Route component={Error404} />
                 </Switch>
                 <Rail position='right'>

@@ -31,8 +31,11 @@ class PlotlyGraph extends Component{
 }
 
 PlotlyGraph.propTypes = {
+  //Roots acrros iterations
   x_s: PropTypes.array,
+  //F of those roots 
   fx_s: PropTypes.array,
+  //Title of the graph
   title: PropTypes.string
 }
 

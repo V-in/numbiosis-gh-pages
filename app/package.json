@@ -6,6 +6,7 @@
     "babel-plugin-module-resolver": "^3.1.1"
   },
   "dependencies": {
+    "lodash": "^4.17.10",
     "plotly.js": "^1.40.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
