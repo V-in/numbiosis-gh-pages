@@ -38,6 +38,11 @@ const fieldsConfig = [
     label: 'Segundo X',
   },
   {
+    name: 'x2',
+    placeholder: '6',
+    label: 'Terceiro X',
+  },
+  {
     name: 'tol',
     placeholder: '2e-10',
     label: 'Tolerância',

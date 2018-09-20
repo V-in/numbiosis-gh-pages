@@ -22,6 +22,7 @@ const routes = [
     path: '/muller',
     component: () => <MullerMethod />
   },
+  /*
   {
     sidebarName: 'Example Page',
     path: '/example',
@@ -34,8 +35,10 @@ const routes = [
         name: 'Bar',
         content: <h1>Second tab</h1>
       }
+  *
     ]}/>
   }
+  */
 ]
 
 export default routes
