@@ -12,6 +12,7 @@
     ],
     "rules": {
         "arrow-spacing":"warn",
-        "jsx-quotes": ["warn", "prefer-single"]
+        "jsx-quotes": ["warn", "prefer-single"],
+        "no-undef": "error"
     }
 }
