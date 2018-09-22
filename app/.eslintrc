@@ -1,0 +1,17 @@
+{
+    "settings": {
+        "import/resolver": {
+            "babel-module": {
+                "root": ["./src"]
+            }
+        }
+    },
+    "extends":[
+        "react-app",
+        "plugin:import/errors"
+    ],
+    "rules": {
+        "arrow-spacing":"warn",
+        "jsx-quotes": ["warn", "prefer-single"]
+    }
+}
