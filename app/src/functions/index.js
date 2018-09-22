@@ -163,8 +163,6 @@ const muller = ({ f, a, b, c, tol, N }) => {
         return;
     }
 
-
-    
     var i;
     var resultado;
 
@@ -208,13 +206,14 @@ const muller = ({ f, a, b, c, tol, N }) => {
         c = resultado;
 
         x_s.push(resultado)
-        
+        /*
         if (i > N)
         {
             console.log("A Raiz nao pode ser encontrada utilizando o metodo de Muller")
             alert("A Raiz nao pode ser encontrada utilizando o metodo de Muller")
             break;
         }
+        */
     }
     if (i <= N){
         console.log("O valor da raiz eh " + resultado)

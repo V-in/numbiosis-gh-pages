@@ -8,6 +8,20 @@ import { RegulaFalsiMethod } from '../components'
 
 const routes = [
   {
+    sidebarName: 'Principal',
+    path: '/principal',
+    component: () => <TabularPage tabs={[
+      {
+        name: 'Foo',
+        content: <h1>First tab</h1>
+      },
+      {
+        name: 'Bar',
+        content: <h1>Second tab</h1>
+      }  
+    ]}/>
+  },
+  {
     sidebarName: 'Método da Falsa Posição',
     path: '/falsa_posicao',
     component: () => <RegulaFalsiMethod />
@@ -22,23 +36,7 @@ const routes = [
     path: '/muller',
     component: () => <MullerMethod />
   },
-  /*
-  {
-    sidebarName: 'Example Page',
-    path: '/example',
-    component: () => <TabularPage tabs={[
-      {
-        name: 'Foo',
-        content: <h1>First tab</h1>
-      },
-      {
-        name: 'Bar',
-        content: <h1>Second tab</h1>
-      }
-  *
-    ]}/>
-  }
-  */
+  ///*
 ]
 
 export default routes
