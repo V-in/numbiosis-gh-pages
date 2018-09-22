@@ -1,14 +1,7 @@
 import React from 'react'
-import { PlotlyGraph } from '../'
 import { GenericMethod } from '../'
 import { secant } from '../../functions'
 import SecantMethodDescription from '../../misc/SecantMethodDescription'
-import {
-  Form,
-  Segment,
-  Input,
-  Button
-} from 'semantic-ui-react'
 
 class SecantMethod extends React.Component {
   render() {

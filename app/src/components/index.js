@@ -1,4 +1,4 @@
-import Header from './Header/Header'
+import Header from 'components/Header/Header'
 import Sidebar from './Sidebar/Sidebar'
 import GenericMethod from './GenericMethod/GenericMethod'
 import TabularPage from './TabularPage/TabularPage'

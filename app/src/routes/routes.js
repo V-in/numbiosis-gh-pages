@@ -1,10 +1,10 @@
 import React from 'react'
 //import SecantMethodDescription from '../misc/SecantMethodDescription'
 //import { secant } from '../functions'
-import { TabularPage, GenericMethod } from '../components'
-import { SecantMethod } from '../components'
-import { MullerMethod } from '../components'
-import { RegulaFalsiMethod } from '../components'
+import { TabularPage, GenericMethod } from 'components'
+import { SecantMethod } from 'components'
+import { MullerMethod } from 'components'
+import { RegulaFalsiMethod } from 'components'
 
 const routes = [
   {
