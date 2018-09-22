@@ -21,6 +21,17 @@ class RegulaFalsiMethod extends React.Component {
   }
 }
 
+
+ /* 
+        Params:
+            f -> Função em string
+            a -> Valor Inicial A
+            b -> Valor Inicial B
+            c -> Valor Inicial C
+            tol -> Tolerância de erro
+            N -> Quantidade máxima de iterações
+  */
+
 const fieldsConfig = [
   {
     name: 'f',

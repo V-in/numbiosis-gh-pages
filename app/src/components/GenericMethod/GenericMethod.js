@@ -63,7 +63,7 @@ class GenericMethod extends React.Component {
   renderPlot = () => (
     this.state.success && 
     <div>
-      <PlotlyGraph x_s={this.state.result.x_s} fx_s={this.state.result.fx_s} title='Secante'/>
+      <PlotlyGraph x_s={this.state.result.x_s} fx_s={this.state.result.fx_s} title='Resultado'/>
       <b>Resultado final:</b> {this.state.result.x}
     </div>
   )
