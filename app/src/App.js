@@ -26,6 +26,7 @@ class App extends Component {
                 <Switch>
                   {routes.map((elem, index) => (
                     <Route
+                      {...elem.options}
                       key={index}
                       path={elem.path}
                       component={elem.component}

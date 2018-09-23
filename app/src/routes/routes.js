@@ -1,7 +1,7 @@
 import React from 'react'
 //import SecantMethodDescription from '../misc/SecantMethodDescription'
 //import { secant } from '../functions'
-import { TabularPage, GenericMethod } from 'components'
+import { TabularPage } from 'components'
 import { SecantMethod } from 'components'
 import { MullerMethod } from 'components'
 import { RegulaFalsiMethod } from 'components'
@@ -9,7 +9,10 @@ import { RegulaFalsiMethod } from 'components'
 const routes = [
   {
     sidebarName: 'Principal',
-    path: '/principal',
+    path: '/',
+    options: {
+      exact: true
+    },
     component: () => <TabularPage tabs={[
       {
         name: 'Foo',

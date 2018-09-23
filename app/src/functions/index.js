@@ -92,6 +92,7 @@ const secant = ({ f, x0, x1, tol, N }) => {
   let x
 
   while (!done && i < N) {
+
       x = ((x0 * f_after)-(x1 * f_before))/(f_after - f_before)
       fx = f(x);
       x_s.push(x);
@@ -130,7 +131,15 @@ const muller = ({ f, a, b, c, tol, N }) => {
             c -> Valor Inicial C
             tol -> Tolerância de erro
             N -> Quantidade máxima de iterações
+
+            f(x) = 16*x**4-40*x**3+5*x**2+20*x+6
+
+            x0 0.5
+            x1 -0.5
+            x2 0.0
+
     */
+
 
     // Adicionar a chamada do método correspondente de Math
     f = f.replace(/(cos|sin|tan|exp|log10|log|log2)/, 'Math.$1');
@@ -164,6 +173,27 @@ const muller = ({ f, a, b, c, tol, N }) => {
     }
 
     var i;
+    // tentativa de identificar a variável
+    let variavel = regexVar.exec(f);
+
+    // Caso não encontre a variável
+    if(!variavel) {
+        console.log('Não foi possível encontrar a variável!');
+    }
+
+    // Remove símbolos inválidos da variável
+    variavel = variavel[0].replace(/\W+/, '');
+
+    // converte o erro para valor
+    tol = parseFloat(tol).toFixed(20);
+    console.log("tol: "+tol);
+    // Criando uma arrow function a partir da string
+    f = eval('('+ variavel +') => ' + f);
+ 
+    // Verficar se a função foi escrita corretamente
+    try {
+        f(1)
+    } catch (Error) {
     var resultado;
 
     let x_s = [];
@@ -172,6 +202,7 @@ const muller = ({ f, a, b, c, tol, N }) => {
 
     for (i = 0;;i += 1)
     {
+        
         var f0 = f(a);
         var f1 = f(b);
         var f2 = f(c);
@@ -357,6 +388,7 @@ const regula_falsi = ({f, a, b, tol, N}) => {
                 todos os fs das razes obtidas: fx_s    
         */
         return {x, x_s, fx_s}}
+
 
 export {
   secant,
