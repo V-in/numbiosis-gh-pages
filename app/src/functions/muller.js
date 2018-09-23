@@ -1,5 +1,8 @@
 const math = require('mathjs')
 
+
+console.log(math.eval('2^2'))
+
 function muller(f_, p0, p1, p2, tol, N) {
     function f(x) {
         return math.eval(f_.replace(/x/g, `(${x})`));
@@ -66,4 +69,4 @@ muller("x^2 - 6", 0, 3, 6, 10e-2, 12)
 
 //muller("12*x^4 + 12*x^3 - 12*x^2 - 12*x^1 + 6", 2, 3,4, 2e-10, 12)
 
-export default muller
+//export default muller

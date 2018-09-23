@@ -9,8 +9,8 @@ const SecantMethodDescription = () => (
     <div style={{textAlign: 'justify'}}>
       <p>
         &emsp; Neste método partimos das duas aproximações iniciais <b>p0</b> e 
-        <b>p1</b> e determinamos a reta que passa pelos pontos <b>(p0, f(p0))</b>
-        e <b>(p1, f(p1))</b>. A intersecção desta reta com o eixo <b>x</b> 
+        <b>p1</b> e determinamos a reta que passa pelos pontos <b>(p0, f(p0)) </b>
+        e <b>(p1, f(p1))</b>. A intersecção desta reta com o eixo <b>x </b> 
         fornece o ponto <b>x2</b>. Em seguida é calculado uma nova aproximação
         para a raiz a partir dos pontos <b>(p1, f(p1))</b> e <b>(x2, f (x2))</b>.
         O processo se repete até que seja satisfeito o critério de parada.

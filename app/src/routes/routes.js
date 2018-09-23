@@ -1,26 +1,26 @@
 import React from 'react'
-//import SecantMethodDescription from '../misc/SecantMethodDescription'
-//import { secant } from '../functions'
 import { TabularPage } from 'components'
 import { SecantMethod } from 'components'
 import { MullerMethod } from 'components'
 import { RegulaFalsiMethod } from 'components'
+import Numbiosis from 'misc/Numbiosis'
+import About from 'misc/About'
 
 const routes = [
   {
-    sidebarName: 'Principal',
+    sidebarName: 'Home',
     path: '/',
     options: {
       exact: true
     },
     component: () => <TabularPage tabs={[
       {
-        name: 'Foo',
-        content: <h1>First tab</h1>
+        name: 'Numbiosis',
+        content: <Numbiosis/>
       },
       {
-        name: 'Bar',
-        content: <h1>Second tab</h1>
+        name: 'Autores',
+        content: <About/>
       }  
     ]}/>
   },
