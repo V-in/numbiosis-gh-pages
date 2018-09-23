@@ -1,8 +1,8 @@
 import React from 'react'
-import { PlotlyGraph } from '..'
-import { GenericMethod } from '..'
-import { regula_falsi } from '../../functions'
-import RegulaFalsiMethodDescription from '../../misc/RegulaFalsiMethodDescription'
+import { PlotlyGraph } from 'components'
+import { GenericMethod } from 'components'
+import { regula_falsi } from 'functions'
+import RegulaFalsiMethodDescription from 'misc/RegulaFalsiMethodDescription'
 import {
   Form,
   Segment,

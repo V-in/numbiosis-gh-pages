@@ -1,7 +1,7 @@
 import React from 'react'
-import { GenericMethod } from '../'
-import { secant } from '../../functions'
-import SecantMethodDescription from '../../misc/SecantMethodDescription'
+import { GenericMethod } from 'components'
+import { secant } from 'functions'
+import SecantMethodDescription from 'misc/SecantMethodDescription'
 
 class SecantMethod extends React.Component {
   render() {

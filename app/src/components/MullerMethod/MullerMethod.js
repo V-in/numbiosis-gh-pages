@@ -1,8 +1,8 @@
 import React from 'react'
-import { PlotlyGraph } from '..'
-import { GenericMethod } from '..'
-import { muller } from '../../functions'
-import MullerMethodDescription from '../../misc/MullerMethodDescription'
+import { PlotlyGraph } from 'components'
+import { GenericMethod } from 'components'
+import { muller } from 'functions'
+import MullerMethodDescription from 'misc/MullerMethodDescription'
 import {
   Form,
   Segment,
