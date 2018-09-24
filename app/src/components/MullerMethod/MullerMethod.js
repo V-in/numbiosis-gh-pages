@@ -72,12 +72,12 @@ const fieldsConfig = [
   {
     name: 'f',
     placeholder: 'x**2 - 6',
-    label: 'Função'
+    label: 'Função',
   },
   {
     name: 'p0',
     placeholder: '0',
-    label: 'Primeiro X'
+    label: 'Primeiro X',
   },
   {
     name: 'p1',
@@ -97,7 +97,7 @@ const fieldsConfig = [
   {
     name: 'N',
     placeholder: '5',
-    label: 'Iterações'
+    label: 'Iterações',
   },
 ]
 

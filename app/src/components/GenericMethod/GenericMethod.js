@@ -41,12 +41,11 @@ class GenericMethod extends React.Component {
             {
               chunk(fields, 3).map((outer, i) => (
                 <Form.Group widths='equal' key={i}>
-                  {outer.map( ({ label, name, placeholder }, j) => (
-                    <Form.Field key={j} required control={Input} fluid label={label} name={name} placeholder={placeholder} onChange={this.handleChange}/>
+                  {outer.map( ({ label, name, placeholder, options}, j) => (
+                    <Form.Field key={j} required control={Input} {...options} fluid label={label} name={name} placeholder={placeholder} onChange={this.handleChange}/>
                   ))}
                 </Form.Group>
               ))
-
             }
             <Form.Button primary type='submit' content='CALCULAR'/>
           </Form>
