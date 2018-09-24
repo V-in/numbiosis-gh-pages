@@ -1,10 +1,12 @@
 {
   "name": "numbiosis",
   "version": "0.1.0",
+  "homepage": "https://github.com/V-in/numbiosis-gh-pages",
   "private": true,
   "devDependencies": {
     "babel-plugin-module-resolver": "^3.1.1",
-    "eslint-import-resolver-babel-module": "^4.0.0"
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "gh-pages": "^2.0.0"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -60,7 +62,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
