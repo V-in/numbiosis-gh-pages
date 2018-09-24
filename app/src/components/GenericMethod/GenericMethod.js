@@ -30,7 +30,8 @@ class GenericMethod extends React.Component {
 
   renderPlotPage = () => {
     let {
-      fields
+      fields,
+      renderResult,
     } = this.props
 
     return (
@@ -53,7 +54,9 @@ class GenericMethod extends React.Component {
         {
           this.state.success &&
           <Segment vertical>
-            {this.renderPlot()}
+            {
+              (renderResult === undefined)?  this.renderPlot() : renderResult(this.state.result)
+            }
           </Segment>
         }
       </React.Fragment>
@@ -99,7 +102,10 @@ GenericMethod.propTypes = {
     label: PropTypes.string
   })),
   //Function that will be called with user inputs as argument. It should return {x, x_s, fx_s}
-  f: PropTypes.func
+  f: PropTypes.func,
+  //Overloads renderPlot. Use this if you want to render a costum component when result is available
+  //This function will be called with f(fields) as parameter
+  renderResult: PropTypes.func
 }
 
 export default GenericMethod
